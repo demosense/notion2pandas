@@ -71,6 +71,8 @@ def parse_property(prop: dict):
         return parse_created_time(prop.get("created_time"))
     elif prop_type == "last_edited_time":
         return parse_last_edited_time(prop.get("last_edited_time"))
+    elif prop_type == "status":
+        return parse_status(prop.get("status"))
     else:
         # Log that the type of field is not supported
         print(f"Property type '{prop_type}' is not supported.")
@@ -328,4 +330,21 @@ def parse_last_edited_time(value: str):
         return pd.to_datetime(value)
     except Exception as e:
         print(f"Error parsing last_edited_time: {e}")
+        return None
+    
+
+def parse_status(value: str):
+    """
+    Parses a Notion 'status' property.
+
+    Parameters:
+    - value (dict): The status value.
+
+    Returns:
+    - str: The status name.
+    """
+    try:
+        return value.get("name", None)
+    except Exception as e:
+        print(f"Invalid status property: {e}")
         return None

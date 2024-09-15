@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+pandas = ">=1.0"
+requests = ">=2.0"
+
+[dev-packages]
+pytest = ">=6.0"
+flake8 = ">=3.8"
+python-dotenv = ">=0.19"
+
+[requires]
+python_version = ">=3.6"

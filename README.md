@@ -1,10 +1,10 @@
-# notion2pandas
+# pandas-notion
 
-notion2pandas is a Python package that retrieves data from a Notion database and converts it into a pandas DataFrame. It simplifies the process of extracting and transforming data from Notion, allowing for easy data analysis and manipulation using pandas.
+pandas-notion is a Python package that retrieves data from a Notion database and converts it into a pandas DataFrame. It simplifies the process of extracting and transforming data from Notion, allowing for easy data analysis and manipulation using pandas.
 
 ## Usage
 
-To use notion2pandas, you need to have:
+To use pandas-notion, you need to have:
 
 - A Notion integration token.
 - The ID of the Notion database you want to access.
@@ -23,10 +23,10 @@ export NOTION_SECRET='your_notion_integration_token'
 Code Example
 
 ```python
-import notion2pandas
+import pandas-notion
 
 # Replace 'your_database_id' with your actual Notion database ID
-df_notion = notion2pandas.read_database('your_database_id')
+df_notion = pandas-notion.read_database('your_database_id')
 
 print(df_notion.head())
 ```

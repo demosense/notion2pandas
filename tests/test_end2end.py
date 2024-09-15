@@ -4,11 +4,11 @@ import os
 import pandas as pd
 
 # Import the package
-import notion2pandas
+import pandas_notion
 
 def test_read_database():
     """
-    End-to-end test for the notion2pandas package.
+    End-to-end test for the pandas-notion package.
     """
     # Retrieve environment variables
     NOTION_SECRET = os.getenv("NOTION_SECRET")
@@ -19,7 +19,7 @@ def test_read_database():
     assert DATABASE_ID is not None, "DATABASE_ID is not set in the environment."
 
     # Call the function to read the Notion database
-    df = notion2pandas.read_database(database_id=DATABASE_ID)
+    df = pandas_notion.read_database(database_id=DATABASE_ID)
 
     # Basic assertions
     assert isinstance(df, pd.DataFrame), "The result is not a pandas DataFrame."

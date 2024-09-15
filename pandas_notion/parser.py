@@ -1,4 +1,4 @@
-# notion2pandas/parser.py
+# pandas-notion/parser.py
 
 import pandas as pd
 

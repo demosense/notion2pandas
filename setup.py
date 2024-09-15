@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name='notion2pandas',
+    name='pandas-notion',
     version='0.1.0',
     author='jarias',
     author_email='jacinto.arias@taidy.cloud',
     description='A package to convert Notion databases to Pandas DataFrames',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/demosense/notion2pandas',
+    url='https://github.com/demosense/pandas-notion',
     project_urls={
-        'Bug Tracker': 'https://github.com/demosense/notion2pandas/issues',
+        'Bug Tracker': 'https://github.com/demosense/pandas-notion/issues',
     },
     classifiers=[
         'Programming Language :: Python :: 3',
